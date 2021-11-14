@@ -22,7 +22,7 @@ public class Main {
 
         String ProjectPath = System.getProperty("user.dir");
         System.out.println(ProjectPath+"\\");
-        for (int j = 0;j < 3;j++)
+        for (int j = 0;j < 6;j++)
         {
             BufferedImage image = null;
             try {
@@ -84,7 +84,7 @@ public class Main {
             }
             //System.out.println(newline+"Break");
 
-            lines.add(newline+"Break");
+            lines.add(newline);
             Path file = Paths.get("Images.txt");
             Files.write(file, lines, StandardCharsets.UTF_8);
             //Files.write(file, lines, StandardCharsets.UTF_8, StandardOpenOption.APPEND);
